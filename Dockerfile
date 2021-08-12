@@ -8,5 +8,5 @@ RUN yarn && yarn build
 
 ###
 # production image
-FROM nginx:stable-alpine
+FROM nginx:mainline-alpine
 COPY --from=builder /tmp/build /usr/share/nginx/html
